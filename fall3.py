@@ -1,14 +1,3 @@
-# ============================================================
-# HEDGE V2 SUBMISSION — "4x longer, 4x closer"
-#  - Cross features + hash2p17
-#  - 19 poverty classifiers with OOF isotonic + shrink (3-fold)
-#  - HH huber+median+geom selection + isotonic + k-grid
-#  - No leakage (train on train_* only)
-#  - Writes submission_hedge_v2.zip with two CSVs at root:
-#       predicted_household_consumption.csv  (cons_ppp17 header)
-#       predicted_poverty_distribution.csv
-# ============================================================
-
 import time
 import zipfile
 import warnings
@@ -517,3 +506,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
